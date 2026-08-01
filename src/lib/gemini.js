@@ -3,7 +3,7 @@ import { CONFIG } from "../data/config.js";
 // The model name Google exposes changes over time. Override it via
 // VITE_GEMINI_MODEL in your .env if this one is ever retired —
 // check https://ai.google.dev/gemini-api/docs/models for the current list.
-const MODEL = import.meta.env.VITE_GEMINI_MODEL || "gemini-2.5-flash";
+const MODEL = import.meta.env.VITE_GEMINI_MODEL || "gemini-flash-latest";
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
